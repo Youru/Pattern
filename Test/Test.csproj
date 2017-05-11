@@ -48,6 +48,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuilderTest.cs" />
     <Compile Include="AbstractFactoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,9 +56,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AbstractFactory\HouseWorkFactory\HouseWorkFactory.csproj">
+    <ProjectReference Include="..\AbstractFactory\HouseWorkFactory\AbstractFactory.csproj">
       <Project>{45655d33-2848-475c-ac74-d7cddbebc4e1}</Project>
-      <Name>HouseWorkFactory</Name>
+      <Name>AbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Builder\Builder\Builder.csproj">
+      <Project>{bef072ce-c2ac-4d48-8626-24183922644e}</Project>
+      <Name>Builder</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
