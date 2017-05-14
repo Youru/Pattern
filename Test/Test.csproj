@@ -48,6 +48,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SingletonTest.cs" />
+    <Compile Include="PrototypeTest.cs" />
     <Compile Include="FactoryMethodTest.cs" />
     <Compile Include="BuilderTest.cs" />
     <Compile Include="AbstractFactoryTest.cs" />
@@ -68,6 +70,14 @@
     <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj">
       <Project>{e18f7a8b-8771-4520-a8e7-257c9bbe75d9}</Project>
       <Name>FactoryMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prototype\Prototype.csproj">
+      <Project>{e32afb8e-1a92-4061-912a-6245e52fadd8}</Project>
+      <Name>Prototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Singleton\Singleton.csproj">
+      <Project>{a616ef08-497a-485e-a5a0-59744c9c3b81}</Project>
+      <Name>Singleton</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
